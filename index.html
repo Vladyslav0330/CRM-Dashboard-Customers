@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -182,8 +188,10 @@
           <div class="cus__down">
             <p class="down__text">Showing data 1 to 8 of 256K entries</p>
 
-            <ul class="pagination" id="pagination">
-              <li class="active"><a href="#" onclick="changePage(1)">👈</a></li>
+            <ul class="down__pagination" id="pagination">
+              <li class="pagination__active">
+                <a href="#" onclick="changePage(1)">👈</a>
+              </li>
               <li><a href="#" onclick="changePage(2)">1</a></li>
               <li><a href="#" onclick="changePage(3)">2</a></li>
               <li><a href="#" onclick="changePage(3)">3</a></li>
