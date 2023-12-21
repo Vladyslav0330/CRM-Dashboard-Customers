@@ -85,10 +85,136 @@
         </div>
       </div>
       <div class="user">
-        <img src="./img/User.jpg" alt="photo of user" class="user__icon">
+        <img src="./img/User.jpg" alt="photo of user" class="user__icon" />
         <p class="user__name">Evano</p>
         <p class="user__stat">Project Manager</p>
       </div>
     </aside>
+    <main class="content">
+      <div class="cus__page">
+        <p class="user-name">Hello Evano 👋🏼,</p>
+        <div class="cus__block">
+          <div class="cus__top">
+            <p class="top__text">All Customers</p>
+            <p class="top_active">Active Members</p>
+            <input type="text" class="top__input" />
+          </div>
+          <div class="cus__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td>Inactive</td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td>Inactive</td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Jerome Bell</td>
+                  <td>Google</td>
+                  <td>(629) 555-0129</td>
+                  <td>jerome@google.com</td>
+                  <td>Réunion</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Kathryn Murphy</td>
+                  <td>Microsoft</td>
+                  <td>(406) 555-0120</td>
+                  <td>kathryn@microsoft.com</td>
+                  <td>Curaçao</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Jacob Jones</td>
+                  <td>Yahoo</td>
+                  <td>(208) 555-0112</td>
+                  <td>jacob@yahoo.com</td>
+                  <td>Brazil</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Kristin Watson</td>
+                  <td>Facebook</td>
+                  <td>(704) 555-0127</td>
+                  <td>kristin@facebook.com</td>
+                  <td>Åland Islands</td>
+                  <td>Inactive</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cus__down">
+            <p class="down__text">Showing data 1 to 8 of 256K entries</p>
+
+            <ul class="pagination" id="pagination">
+              <li class="active"><a href="#" onclick="changePage(1)">👈</a></li>
+              <li><a href="#" onclick="changePage(2)">1</a></li>
+              <li><a href="#" onclick="changePage(3)">2</a></li>
+              <li><a href="#" onclick="changePage(3)">3</a></li>
+              <li><a href="#" onclick="changePage(3)">4</a></li>
+              <li><a href="#" onclick="changePage(3)">👉</a></li>
+            </ul>
+
+            <script>
+              function changePage(pageNumber) {
+                const content = document.getElementById("content");
+
+                content.innerHTML = "";
+
+                // content.innerHTML =
+                //   "<p>Содержимое страницы " + pageNumber + "</p>";
+
+                const pagination = document.getElementById("pagination");
+                const pages = pagination.getElementsByTagName("li");
+                for (const i = 0; i < pages.length; i++) {
+                  pages[i].classList.remove("active");
+                }
+
+                const selectedPage = document.querySelector(
+                  ".pagination li:nth-child(" + pageNumber + ")"
+                );
+                selectedPage.classList.add("active");
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
