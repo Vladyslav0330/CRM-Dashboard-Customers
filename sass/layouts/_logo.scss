@@ -1,0 +1,38 @@
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  width: 195px;
+  height: 39px;
+  flex-shrink: 0;
+
+  margin-top: 37px;
+  margin-left: 28px;
+  margin-bottom: 65px;
+}
+
+.logo__title {
+  color: var(--black-color);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.26px;
+
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.logo__vers {
+  color: #838383;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  padding-top: 10px;
+}

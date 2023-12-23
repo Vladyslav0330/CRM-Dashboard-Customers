@@ -13,6 +13,7 @@ ol {
   margin: 0;
   padding-left: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 img {
@@ -23,16 +24,12 @@ img {
   // width: 100%;
 }
 
-// body {
-//   font-family: var(--main-font);
-//   background-color: var(--white-color);
-// }
-
-.list {
-  list-style: none;
+body {
+  font-family: var(--main-font);
+  background-color: #fafbff;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 

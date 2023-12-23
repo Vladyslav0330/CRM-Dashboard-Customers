@@ -1,3 +1,5 @@
-body {
-  background-color: aquamarine;
-}
+@import "./utils/vars";
+@import "./base/reset";
+@import "./components/container";
+@import "./layouts/logo";
+@import "./layouts/menu";
