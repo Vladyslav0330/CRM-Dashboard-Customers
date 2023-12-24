@@ -163,36 +163,24 @@
 
               <ul class="down__pagination" id="pagination">
                 <li class="pagination__active">
-                  <a href="#" onclick="changePage(1)">👈</a>
+                  <span class="paginator__num"><</span>
                 </li>
-                <li><a href="#" onclick="changePage(2)">1</a></li>
-                <li><a href="#" onclick="changePage(3)">2</a></li>
-                <li><a href="#" onclick="changePage(3)">3</a></li>
-                <li><a href="#" onclick="changePage(3)">4</a></li>
-                <li><a href="#" onclick="changePage(3)">👉</a></li>
+                <li class="pagination__active">
+                  <span class="paginator__num">1</span>
+                </li>
+                <li class="pagination__active">
+                  <span class="paginator__num">2</span>
+                </li>
+                <li class="pagination__active">
+                  <span class="paginator__num">3</span>
+                </li>
+                <li class="pagination__active">
+                  <span class="paginator__num">4</span>
+                </li>
+                <li class="pagination__active">
+                  <span class="paginator__num">></span>
+                </li>
               </ul>
-
-              <script>
-                function changePage(pageNumber) {
-                  const content = document.getElementById("content");
-
-                  content.innerHTML = "";
-
-                  // content.innerHTML =
-                  //   "<p>Содержимое страницы " + pageNumber + "</p>";
-
-                  const pagination = document.getElementById("pagination");
-                  const pages = pagination.getElementsByTagName("li");
-                  for (const i = 0; i < pages.length; i++) {
-                    pages[i].classList.remove("active");
-                  }
-
-                  const selectedPage = document.querySelector(
-                    ".pagination li:nth-child(" + pageNumber + ")"
-                  );
-                  selectedPage.classList.add("active");
-                }
-              </script>
             </div>
           </div>
         </div>

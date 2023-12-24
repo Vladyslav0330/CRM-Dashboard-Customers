@@ -270,4 +270,24 @@ a {
   line-height: normal;
   letter-spacing: -0.14px;
   margin-right: auto;
+}
+
+.pagination__active {
+  width: 26px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.pagination__active:hover {
+  background-color: var(--hover-color);
+}
+
+.pagination__active:hover .paginator__num {
+  color: var(--white-color);
 }/*# sourceMappingURL=main.css.map */
