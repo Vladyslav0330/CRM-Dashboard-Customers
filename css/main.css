@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-.visually__hidden {
+.is-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -317,11 +317,15 @@ a {
   color: var(--white-color);
 }
 
+.mob-block {
+  display: flex;
+  align-items: center;
+}
+
 .menu-open-btn {
   padding: 0;
   width: 40px;
   height: 40px;
-  margin-left: auto;
   background-color: #fafbff;
   border: none;
   cursor: pointer;
@@ -333,6 +337,34 @@ a {
   .menu-open-btn {
     display: none;
   }
+}
+
+.mob-burger__menu {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: var(--white-color);
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  overflow: auto;
+}
+.mob-burger__menu > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--hover-color);
 }
 
 .table {
