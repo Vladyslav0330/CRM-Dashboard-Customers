@@ -15,20 +15,20 @@
   <body>
     <section class="wrapper">
       <aside class="sidebar">
-        <section class="sidebar__container">
+        <section class="container sidebar__container">
           <section class="logo">
             <img class="logo__icon" src="./img/setting.svg" alt="logo" />
             <h1 class="logo__title">Dashboard</h1>
             <em class="logo__vers">v.01</em>
-            <button type="button" class="menu-close-btn" data-menu-close>
+            <!-- <button type="button" class="menu-close-btn" data-menu-close>
               <svg width="40" height="40">
                 <use
                   href="./imeges/symbol-header.svg#icon-header-menu-close"
                 ></use>
               </svg>
-            </button>
+            </button> -->
           </section>
-          <section class="menu">
+          <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
                 <img class="menu__icon" src="./img/key-square.svg" alt="" />
@@ -64,7 +64,7 @@
                 <img class="menu__arrow" src="./img/arrow.svg" alt="" />
               </li>
             </ul>
-          </section>
+          </nav>
         </section>
         <section class="user">
           <img src="./img/User.jpg" alt="photo of user" class="user__icon" />
@@ -77,16 +77,15 @@
       <main class="main-content">
         <section class="cus__page">
           <p class="user-name">Hello Evano 👋🏼,</p>
-          <label class="hamburger">
-            <input type="checkbox" />
-            <svg viewBox="0 0 32 32">
-              <path
-                class="line line-top-bottom"
-                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-              ></path>
-              <path class="line" d="M7 16 27 16"></path>
+          <button type="button" class="menu-open-btn" data-menu-open>
+            <svg width="40" height="40">
+              <use href="./img/symbol-defs.svg#burger-menu-open"></use>
             </svg>
-          </label>
+          </button>
+
+          <nav class="burger-menu">
+            <!-- <h1>Hello world</h1> -->
+          </nav>
           <section class="cus__block">
             <section class="cus__top">
               <section class="top__text">

@@ -57,6 +57,25 @@ a {
   overflow: hidden;
 }
 
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .wrapper {
   display: flex;
 }
@@ -292,39 +311,22 @@ a {
   color: var(--white-color);
 }
 
-.hamburger {
+.menu-open-btn {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #fafbff;
+  border: none;
   cursor: pointer;
 }
-
-.hamburger input {
-  display: none;
+.menu-open-btn:hover, .menu-open-btn:focus {
+  fill: var(--hover-color);
 }
-
-.hamburger svg {
-  height: 3em;
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line {
-  fill: none;
-  stroke: #000;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line-top-bottom {
-  stroke-dasharray: 12 63;
-}
-
-.hamburger input:checked + svg {
-  transform: rotate(-45deg);
-}
-
-.hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .table {
