@@ -23,6 +23,9 @@
   flex-direction: column;
   justify-content: space-between;
   height: 1198px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .main-content {
