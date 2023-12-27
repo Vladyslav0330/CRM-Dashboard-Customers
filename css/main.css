@@ -128,6 +128,12 @@ a {
   padding-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   flex-direction: column;
